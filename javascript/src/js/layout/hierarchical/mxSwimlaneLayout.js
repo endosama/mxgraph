@@ -1,3 +1,14 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxHierarchicalLayout} from '@js/mxDependencies.js';
+import {mxHierarchicalEdgeStyle} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxSwimlaneModel} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxSwimlaneOrdering} from '@js/mxDependencies.js';
+import {mxMedianHybridCrossingReduction} from '@js/mxDependencies.js';
+import {mxCoordinateAssignment} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -930,4 +941,7 @@ mxSwimlaneLayout.prototype.placementStage = function(initialX, parent)
 	placementStage.execute(parent);
 	
 	return placementStage.limitX + this.interHierarchySpacing;
+};
+export {
+mxSwimlaneLayout,
 };

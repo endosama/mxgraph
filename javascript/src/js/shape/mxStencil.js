@@ -1,3 +1,11 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxConnectionConstraint} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxStencilRegistry} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -856,4 +864,7 @@ mxStencil.prototype.drawNode = function(canvas, shape, node, aspect, disableShad
 			canvas.setShadow(false);
 		}
 	}
+};
+export {
+mxStencil,
 };

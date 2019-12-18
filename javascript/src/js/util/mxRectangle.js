@@ -1,3 +1,4 @@
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -176,4 +177,7 @@ mxRectangle.prototype.equals = function(obj)
 mxRectangle.fromRectangle = function(rect)
 {
 	return new mxRectangle(rect.x, rect.y, rect.width, rect.height);
+};
+export {
+mxRectangle,
 };

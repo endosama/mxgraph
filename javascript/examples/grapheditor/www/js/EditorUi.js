@@ -1,3 +1,42 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxConnectionHandler} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxClipboard} from '@js/mxDependencies.js';
+import {mxClipboardCut} from '@js/mxDependencies.js';
+import {mxClipboardCopy} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxClipboardPaste} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxObjectCodec} from '@js/mxDependencies.js';
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxXmlRequest} from '@js/mxDependencies.js';
+import {mxMorphing} from '@js/mxDependencies.js';
+import {mxImage} from '@js/mxDependencies.js';
+import {mxOutline} from '@js/mxDependencies.js';
+import {mxKeyHandler} from '@js/mxDependencies.js';
+import {mxStackLayout} from '@js/mxDependencies.js';
+import {Actions} from '@grapheditor/js/Dependencies.js';
+import {Sidebar} from '@grapheditor/js/Dependencies.js';
+import {Toolbar} from '@grapheditor/js/Dependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
+import {Format} from '@grapheditor/js/Dependencies.js';
+import {HoverIcons} from '@grapheditor/js/Dependencies.js';
+import {Menus} from '@grapheditor/js/Dependencies.js';
+import {ColorDialog} from '@grapheditor/js/Dependencies.js';
+import {Dialog} from '@grapheditor/js/Dependencies.js';
+import {EditDataDialog} from '@grapheditor/js/Dependencies.js';
+import {LinkDialog} from '@grapheditor/js/Dependencies.js';
+import {OpenFile} from '@grapheditor/js/Dependencies.js';
+import {FilenameDialog} from '@grapheditor/js/Dependencies.js';
+let urlParams = {};
+let EditorUi;
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -4412,4 +4451,9 @@ EditorUi.prototype.destroy = function()
 			c[i].parentNode.removeChild(c[i]);
 		}
 	}
+};
+
+export {
+EditorUi,
+ChangePageSetup,
 };

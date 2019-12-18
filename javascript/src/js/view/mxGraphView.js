@@ -1,3 +1,22 @@
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxUndoableEdit} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxStyleRegistry} from '@js/mxDependencies.js';
+import {mxCellState} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -3013,4 +3032,8 @@ mxCurrentRootChange.prototype.execute = function()
 	this.view.fireEvent(new mxEventObject(name,
 		'root', this.view.currentRoot, 'previous', this.previous));
 	this.isUp = !this.isUp;
+};
+export {
+mxGraphView,
+mxCurrentRootChange,
 };

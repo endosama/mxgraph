@@ -1,3 +1,5 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -148,4 +150,7 @@ mxDivResizer.prototype.getDocumentWidth = function()
 mxDivResizer.prototype.getDocumentHeight = function()
 {
 	return document.body.clientHeight;
+};
+export {
+mxDivResizer,
 };

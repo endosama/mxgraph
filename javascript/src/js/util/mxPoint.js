@@ -1,3 +1,4 @@
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -51,4 +52,7 @@ mxPoint.prototype.clone = function()
 {
 	// Handles subclasses as well
 	return mxUtils.clone(this);
+};
+export {
+mxPoint,
 };

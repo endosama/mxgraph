@@ -1,3 +1,32 @@
+import {mxConnector} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxEllipse} from '@js/mxDependencies.js';
+import {mxRhombus} from '@js/mxDependencies.js';
+import {mxCylinder} from '@js/mxDependencies.js';
+import {mxActor} from '@js/mxDependencies.js';
+import {mxTriangle} from '@js/mxDependencies.js';
+import {mxHexagon} from '@js/mxDependencies.js';
+import {mxCloud} from '@js/mxDependencies.js';
+import {mxLine} from '@js/mxDependencies.js';
+import {mxArrow} from '@js/mxDependencies.js';
+import {mxArrowConnector} from '@js/mxDependencies.js';
+import {mxDoubleEllipse} from '@js/mxDependencies.js';
+import {mxSwimlane} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxLabel} from '@js/mxDependencies.js';
+import {mxStencilRegistry} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2017, JGraph Ltd
  * Copyright (c) 2006-2017, Gaudenz Alder
@@ -1611,4 +1640,7 @@ mxCellRenderer.prototype.destroy = function(state)
 		state.shape.destroy();
 		state.shape = null;
 	}
+};
+export {
+mxCellRenderer,
 };

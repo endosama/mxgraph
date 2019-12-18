@@ -1,3 +1,93 @@
+import {IMAGE_PATH} from '@grapheditor/js/Dependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxGraphView} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxSvgCanvas2D} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxEdgeStyle} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxCellRenderer} from '@js/mxDependencies.js';
+import {mxVertexHandler} from '@js/mxDependencies.js';
+import {mxDragSource} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxGuide} from '@js/mxDependencies.js';
+import {mxGraphHandler} from '@js/mxDependencies.js';
+import {mxConnectionHandler} from '@js/mxDependencies.js';
+import {mxRubberband} from '@js/mxDependencies.js';
+import {mxImage} from '@js/mxDependencies.js';
+import {mxCellHighlight} from '@js/mxDependencies.js';
+import {mxLayoutManager} from '@js/mxDependencies.js';
+import {mxStackLayout} from '@js/mxDependencies.js';
+import {mxCompactTreeLayout} from '@js/mxDependencies.js';
+import {mxHierarchicalLayout} from '@js/mxDependencies.js';
+import {mxCircleLayout} from '@js/mxDependencies.js';
+import {mxFastOrganicLayout} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxDXm1sbJhhxkQYnhS4h2fUZoRAWnf7lv8N27f8P7Xhnekjgpk} from '@js/mxDependencies.js';
+import {mxGraphViewResetValidationState} from '@js/mxDependencies.js';
+import {mxGraphViewValidateCellState} from '@js/mxDependencies.js';
+import {mxCellRendererIsShapeInvalid} from '@js/mxDependencies.js';
+import {mxGraphViewUpdateCellState} from '@js/mxDependencies.js';
+import {mxConnectorPaintLine} from '@js/mxDependencies.js';
+import {mxConnector} from '@js/mxDependencies.js';
+import {mxGraphViewUpdateFloatingTerminalPoint} from '@js/mxDependencies.js';
+import {mxStencilEvaluateTextAttribute} from '@js/mxDependencies.js';
+import {mxStencil} from '@js/mxDependencies.js';
+import {mxCellRendererCreateShape} from '@js/mxDependencies.js';
+import {mxStencilRegistry} from '@js/mxDependencies.js';
+import {mxConnectionHandlerCreateTarget} from '@js/mxDependencies.js';
+import {mxConstraintHandler} from '@js/mxDependencies.js';
+import {mxEllipse} from '@js/mxDependencies.js';
+import {mxCellState} from '@js/mxDependencies.js';
+import {mxConnectionHandlerCreateMarker} from '@js/mxDependencies.js';
+import {mxStyleRegistry} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxConnectionConstraint} from '@js/mxDependencies.js';
+import {mxValueChange} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxImageExport} from '@js/mxDependencies.js';
+import {mxPopupMenuHandler} from '@js/mxDependencies.js';
+import {mxCellEditor} from '@js/mxDependencies.js';
+import {mxCellRendererInitializeLabel} from '@js/mxDependencies.js';
+import {mxConstraintHandlerUpdate} from '@js/mxDependencies.js';
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxCellEditorStartEditing} from '@js/mxDependencies.js';
+import {mxPlainTextEditor} from '@js/mxDependencies.js';
+import {mxCellEditorResize} from '@js/mxDependencies.js';
+import {mxCellEditorGetInitialValue} from '@js/mxDependencies.js';
+import {mxCellEditorGetCurrentValue} from '@js/mxDependencies.js';
+import {mxCellEditorStopEditing} from '@js/mxDependencies.js';
+import {mxCellEditorApplyValue} from '@js/mxDependencies.js';
+import {mxGraphHandlerMoveCells} from '@js/mxDependencies.js';
+import {mxOutline} from '@js/mxDependencies.js';
+import {mxPanningHandler} from '@js/mxDependencies.js';
+import {mxRubberbandReset} from '@js/mxDependencies.js';
+import {mxEdgeHandlerUpdatePreviewState} from '@js/mxDependencies.js';
+import {mxEdgeHandlerIsOutlineConnectEvent} from '@js/mxDependencies.js';
+import {mxElbowEdgeHandler} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxGraphHandlerGetBoundingBox} from '@js/mxDependencies.js';
+import {mxGraphHandlerGetGuideStates} from '@js/mxDependencies.js';
+import {mxVertexHandlerGetSelectionBounds} from '@js/mxDependencies.js';
+import {mxVertexHandlerMouseDown} from '@js/mxDependencies.js';
+import {Sidebar} from '@grapheditor/js/Dependencies.js';
+let urlParams = {};
+let Graph;
+let HoverIcons;
+var html_sanitize = require('exports-loader?window.html_sanitize!@grapheditor/sanitizer/sanitizer.min.js');
+var Base64 = require('exports-loader?Base64!@grapheditor/deflate/base64.js')
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -2261,7 +2351,7 @@ Graph.prototype.replacePlaceholders = function(cell, str)
 	if (str != null)
 	{
 		var last = 0;
-		
+		var match;
 		while (match = this.placeholderPattern.exec(str))
 		{
 			var val = match[0];
@@ -7743,7 +7833,7 @@ if (typeof mxVertexHandler != 'undefined')
 			}
 		};
 		
-		mxCellEditorGetInitialValue = mxCellEditor.prototype.getInitialValue;
+		let mxCellEditorGetInitialValue = mxCellEditor.prototype.getInitialValue;
 		mxCellEditor.prototype.getInitialValue = function(state, trigger)
 		{
 			if (mxUtils.getValue(state.style, 'html', '0') == '0')
@@ -7765,7 +7855,7 @@ if (typeof mxVertexHandler != 'undefined')
 			}
 		};
 		
-		mxCellEditorGetCurrentValue = mxCellEditor.prototype.getCurrentValue;
+		let mxCellEditorGetCurrentValue = mxCellEditor.prototype.getCurrentValue;
 		mxCellEditor.prototype.getCurrentValue = function(state)
 		{
 			if (mxUtils.getValue(state.style, 'html', '0') == '0')
@@ -9030,3 +9120,8 @@ if (typeof mxVertexHandler != 'undefined')
 		};
 	})();
 }
+
+export {
+Graph,
+HoverIcons,
+};

@@ -1,3 +1,8 @@
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -410,4 +415,7 @@ var mxLog =
 		mxLog.write(string + '\n');
 	}
 	
+};
+export {
+mxLog,
 };

@@ -1,3 +1,7 @@
+import {mxKeyHandler} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -123,4 +127,7 @@ mxDefaultKeyHandler.prototype.destroy = function ()
 {
 	this.handler.destroy();
 	this.handler = null;
+};
+export {
+mxDefaultKeyHandler,
 };

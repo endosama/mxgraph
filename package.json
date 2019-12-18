@@ -17,14 +17,36 @@
   },
   "main": "./javascript/dist/build.js",
   "scripts": {
-    "prepare": "grunt build --base ./ --gruntfile etc/build/Gruntfile.js"
+    "prepare": "grunt build --base ./ --gruntfile etc/build/Gruntfile.js",
+    "gen": "webpack",
+    "watch": "webpack --watch"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@types/mxgraph": "github:lgleim/mxgraph-typings",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.0",
+    "css-loader": "^3.3.0",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^5.0.2",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-webpack": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "imports-loader": "^0.8.0",
     "load-grunt-tasks": "^3.5.2",
-    "webpack": "^2.2.1"
+    "style-loader": "^1.0.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }

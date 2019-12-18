@@ -1,3 +1,6 @@
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -412,4 +415,7 @@ mxGeometry.prototype.equals = function(obj)
 		((this.points == null && obj.points == null) || (this.points != null && mxUtils.equalPoints(this.points, obj.points))) &&
 		((this.alternateBounds == null && obj.alternateBounds == null) || (this.alternateBounds != null && this.alternateBounds.equals(obj.alternateBounds))) &&
 		((this.offset == null && obj.offset == null) || (this.offset != null && this.offset.equals(obj.offset)));
+};
+export {
+mxGeometry,
 };

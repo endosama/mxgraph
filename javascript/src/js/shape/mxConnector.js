@@ -1,3 +1,8 @@
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxMarker} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -146,4 +151,7 @@ mxConnector.prototype.augmentBoundingBox = function(bbox)
 	}
 	
 	bbox.grow(size * this.scale);
+};
+export {
+mxConnector,
 };

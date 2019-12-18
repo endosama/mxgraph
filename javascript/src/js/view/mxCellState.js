@@ -1,3 +1,5 @@
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -435,4 +437,7 @@ mxCellState.prototype.clone = function()
 mxCellState.prototype.destroy = function()
 {
 	this.view.graph.cellRenderer.destroy(this);
+};
+export {
+mxCellState,
 };

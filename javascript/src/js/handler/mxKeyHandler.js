@@ -1,3 +1,6 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -425,4 +428,7 @@ mxKeyHandler.prototype.destroy = function()
 	}
 	
 	this.target = null;
+};
+export {
+mxKeyHandler,
 };

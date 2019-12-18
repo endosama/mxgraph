@@ -1,3 +1,9 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1094,4 +1100,7 @@ mxObjectCodec.prototype.beforeDecode = function(dec, node, obj)
 mxObjectCodec.prototype.afterDecode = function(dec, node, obj)
 {
 	return obj;
+};
+export {
+mxObjectCodec,
 };

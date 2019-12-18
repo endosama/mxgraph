@@ -1,3 +1,13 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxSvgCanvas2D} from '@js/mxDependencies.js';
+import {mxVmlCanvas2D} from '@js/mxDependencies.js';
+import {mxRefCount} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1654,4 +1664,7 @@ mxShape.prototype.destroy = function()
 	// Decrements refCount and removes unused
 	this.releaseSvgGradients(this.oldGradients);
 	this.oldGradients = null;
+};
+export {
+mxShape,
 };

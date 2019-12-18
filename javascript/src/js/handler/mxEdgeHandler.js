@@ -1,3 +1,16 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxConstraintHandler} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxGraphHandler} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxCellMarker} from '@js/mxDependencies.js';
+import {mxEdgeStyle} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConnectionConstraint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -2452,4 +2465,7 @@ mxEdgeHandler.prototype.destroy = function()
 	this.bends = null;
 	
 	this.removeHint();
+};
+export {
+mxEdgeHandler,
 };

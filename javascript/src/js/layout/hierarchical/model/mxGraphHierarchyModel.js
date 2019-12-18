@@ -1,3 +1,7 @@
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxGraphHierarchyNode} from '@js/mxDependencies.js';
+import {mxGraphHierarchyEdge} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -678,4 +682,7 @@ mxGraphHierarchyModel.prototype.extendedDfs = function(parent, root, connectingE
 			visitor(parent, root, connectingEdge, layer, 1);
 		}
 	}
+};
+export {
+mxGraphHierarchyModel,
 };

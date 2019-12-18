@@ -1,3 +1,4 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -200,4 +201,7 @@ mxCircleLayout.prototype.circle = function(vertices, r, left, top)
 				Math.round(top + r + r * Math.cos(i * phi)));
 		}
 	}
+};
+export {
+mxCircleLayout,
 };

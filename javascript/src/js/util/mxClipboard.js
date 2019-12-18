@@ -219,3 +219,6 @@ var mxClipboard =
 	}
 
 };
+export {
+mxClipboard,
+};

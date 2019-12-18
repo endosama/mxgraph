@@ -1,3 +1,10 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxPlainTextEditor} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1201,4 +1208,7 @@ mxCellEditor.prototype.destroy = function ()
 		this.graph.view.removeListener(this.zoomHandler);
 		this.zoomHandler = null;
 	}
+};
+export {
+mxCellEditor,
 };

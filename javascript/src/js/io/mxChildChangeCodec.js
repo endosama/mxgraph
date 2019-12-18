@@ -1,3 +1,8 @@
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxObjectCodec} from '@js/mxDependencies.js';
+import {mxChildChange} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -166,3 +171,5 @@ mxCodecRegistry.register(function()
 	return codec;
 
 }());
+export {
+};

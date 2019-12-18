@@ -1,3 +1,8 @@
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxGraphHierarchyNode} from '@js/mxDependencies.js';
+import {mxGraphHierarchyEdge} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -798,4 +803,7 @@ mxSwimlaneModel.prototype.extendedDfs = function(parent, root, connectingEdge, v
 			visitor(parent, root, connectingEdge, layer, 1);
 		}
 	}
+};
+export {
+mxSwimlaneModel,
 };

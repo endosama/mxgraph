@@ -1,3 +1,6 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -222,4 +225,7 @@ mxParallelEdgeLayout.prototype.route = function(edge, x, y)
 	{
 		this.setEdgePoints(edge, [new mxPoint(x, y)]);
 	}
+};
+export {
+mxParallelEdgeLayout,
 };

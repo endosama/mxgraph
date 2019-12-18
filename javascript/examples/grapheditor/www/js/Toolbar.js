@@ -1,3 +1,12 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxDisabled} from '@js/mxDependencies.js';
+import {EditorUi} from '@grapheditor/js/Dependencies.js';
+import {Menus} from '@grapheditor/js/Dependencies.js';
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -946,4 +955,8 @@ Toolbar.prototype.destroy = function()
 		mxEvent.removeGestureListeners(document, this.gestureHandler);
 		this.gestureHandler = null;
 	}
+};
+
+export {
+Toolbar,
 };

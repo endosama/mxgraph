@@ -1,3 +1,11 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxImage} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -514,4 +522,7 @@ mxConstraintHandler.prototype.destroy = function()
 		mxEvent.removeListener(this.graph.container, 'mouseleave', this.mouseleaveHandler);
 		this.mouseleaveHandler = null;
 	}
+};
+export {
+mxConstraintHandler,
 };

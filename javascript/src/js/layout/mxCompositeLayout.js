@@ -1,3 +1,4 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -98,4 +99,7 @@ mxCompositeLayout.prototype.execute = function(parent)
 	{
 		model.endUpdate();
 	}
+};
+export {
+mxCompositeLayout,
 };

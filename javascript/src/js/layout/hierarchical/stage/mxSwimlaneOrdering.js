@@ -1,3 +1,6 @@
+import {mxHierarchicalLayoutStage} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -93,4 +96,7 @@ mxSwimlaneOrdering.prototype.execute = function(parent)
 		seenNodes[cellId] = node;
 		delete unseenNodes[cellId];
 	}, rootsArray, true, null);
+};
+export {
+mxSwimlaneOrdering,
 };

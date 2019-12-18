@@ -1,3 +1,37 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxUndoManager} from '@js/mxDependencies.js';
+import {mxDivResizer} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPrintPreview} from '@js/mxDependencies.js';
+import {mxGraphView} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
+import {mxGraphPanGraph} from '@js/mxDependencies.js';
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxGraphHandlerShouldRemoveCellsFromParent} from '@js/mxDependencies.js';
+import {mxGraphHandler} from '@js/mxDependencies.js';
+import {mxConnectionHandlerCreateMarker} from '@js/mxDependencies.js';
+import {mxConnectionHandler} from '@js/mxDependencies.js';
+import {mxCellMarker} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxPopupMenuAddItem} from '@js/mxDependencies.js';
+import {mxPopupMenuHandler} from '@js/mxDependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
+import {Actions} from '@grapheditor/js/Dependencies.js';
+let urlParams = {};
+let Editor;
+let OpenFile;
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -2416,3 +2450,12 @@ PageSetupDialog.getFormats = function()
 	};
 
 })();
+
+export {
+Editor,
+OpenFile,
+ErrorDialog,
+PrintDialog,
+PageSetupDialog,
+Dialog,
+};

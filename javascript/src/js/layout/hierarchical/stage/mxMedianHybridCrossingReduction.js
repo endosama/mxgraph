@@ -1,3 +1,4 @@
+import {mxHierarchicalLayoutStage} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -672,4 +673,7 @@ MedianCellSorter.prototype.compare = function(a, b)
 	{
 		return 0;
 	}
+};
+export {
+mxMedianHybridCrossingReduction,
 };

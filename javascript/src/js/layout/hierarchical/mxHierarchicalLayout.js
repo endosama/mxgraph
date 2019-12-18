@@ -1,3 +1,11 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxGraphHierarchyModel} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxMinimumCycleRemover} from '@js/mxDependencies.js';
+import {mxMedianHybridCrossingReduction} from '@js/mxDependencies.js';
+import {mxCoordinateAssignment} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -848,4 +856,8 @@ mxHierarchicalLayout.prototype.placementStage = function(initialX, parent)
 	placementStage.execute(parent);
 	
 	return placementStage.limitX + this.interHierarchySpacing;
+};
+export {
+mxHierarchicalLayout,
+mxHierarchicalEdgeStyle,
 };

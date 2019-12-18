@@ -1,3 +1,6 @@
+import {mxCompactTreeLayout} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxGraphLayout} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -315,4 +318,7 @@ mxRadialTreeLayout.prototype.calcRowDims = function(row, rowNum)
 	{
 		this.calcRowDims(this.row[rowNum], rowNum + 1);
 	}
+};
+export {
+mxRadialTreeLayout,
 };

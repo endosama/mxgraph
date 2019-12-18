@@ -1,3 +1,5 @@
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2017, JGraph Ltd
  * Copyright (c) 2006-2017, Gaudenz Alder
@@ -130,4 +132,7 @@ mxTemporaryCellStates.prototype.destroy = function()
 	this.view.setGraphBounds(this.oldBounds);
 	this.view.validateCellState = this.oldValidateCellState;
 	this.view.graph.cellRenderer.doRedrawShape = this.oldDoRedrawShape;
+};
+export {
+mxTemporaryCellStates,
 };

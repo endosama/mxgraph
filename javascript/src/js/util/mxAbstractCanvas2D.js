@@ -1,3 +1,7 @@
+import {mxUrlConverter} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -640,3 +644,6 @@ mxAbstractCanvas2D.prototype.close = function(x1, y1, x2, y2, x3, y3)
  * Empty implementation for backwards compatibility. This will be removed.
  */
 mxAbstractCanvas2D.prototype.end = function() { };
+export {
+mxAbstractCanvas2D,
+};

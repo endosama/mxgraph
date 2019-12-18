@@ -1,3 +1,6 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -215,4 +218,7 @@ mxPopupMenuHandler.prototype.destroy = function()
 	
 	// Supercall
 	mxPopupMenu.prototype.destroy.apply(this);
+};
+export {
+mxPopupMenuHandler,
 };

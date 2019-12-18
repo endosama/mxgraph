@@ -1,3 +1,11 @@
+import {mxAbstractCanvas2D} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxCachedOffsetWidth} from '@js/mxDependencies.js';
+import {mxCachedFinalOffsetWidth} from '@js/mxDependencies.js';
+import {mxCachedFinalOffsetHeight} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -2202,4 +2210,7 @@ mxSvgCanvas2D.prototype.fill = function()
 mxSvgCanvas2D.prototype.fillAndStroke = function()
 {
 	this.addNode(true, true);
+};
+export {
+mxSvgCanvas2D,
 };

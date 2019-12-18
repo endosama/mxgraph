@@ -1,3 +1,14 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxRootChange} from '@js/mxDependencies.js';
+import {mxChildChange} from '@js/mxDependencies.js';
+import {mxTerminalChange} from '@js/mxDependencies.js';
+import {mxGeometryChange} from '@js/mxDependencies.js';
+import {mxVisibleChange} from '@js/mxDependencies.js';
+import {mxStyleChange} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -406,4 +417,7 @@ mxLayoutManager.prototype.executeLayout = function(layout, parent)
 mxLayoutManager.prototype.destroy = function()
 {
 	this.setGraph(null);
+};
+export {
+mxLayoutManager,
 };

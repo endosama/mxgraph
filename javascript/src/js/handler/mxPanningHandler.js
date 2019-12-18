@@ -1,3 +1,7 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -482,4 +486,7 @@ mxPanningHandler.prototype.destroy = function()
 	this.graph.removeListener(this.forcePanningHandler);
 	this.graph.removeListener(this.gestureHandler);
 	mxEvent.removeListener(document, 'mouseup', this.mouseUpListener);
+};
+export {
+mxPanningHandler,
 };

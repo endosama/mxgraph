@@ -1,3 +1,5 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -588,4 +590,7 @@ mxFastOrganicLayout.prototype.calcRepulsion = function()
 mxFastOrganicLayout.prototype.reduceTemperature = function()
 {
 	this.temperature = this.initialTemp * (1.0 - this.iteration / this.maxIterations);
+};
+export {
+mxFastOrganicLayout,
 };

@@ -38,3 +38,6 @@ mxImage.prototype.width = null;
  * Integer that specifies the height of the image.
  */
 mxImage.prototype.height = null;
+export {
+mxImage,
+};

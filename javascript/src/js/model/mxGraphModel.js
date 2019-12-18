@@ -1,3 +1,13 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUndoableEdit} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -2699,4 +2709,16 @@ mxCellAttributeChange.prototype.execute = function()
 		
 		this.previous = tmp;
 	}
+};
+export {
+mxGraphModel,
+mxRootChange,
+mxChildChange,
+mxTerminalChange,
+mxValueChange,
+mxStyleChange,
+mxGeometryChange,
+mxCollapseChange,
+mxVisibleChange,
+mxCellAttributeChange,
 };

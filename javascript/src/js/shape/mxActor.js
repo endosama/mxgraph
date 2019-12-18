@@ -1,3 +1,5 @@
+import {mxShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -83,4 +85,7 @@ mxActor.prototype.redrawPath = function(c, x, y, w, h)
 	c.curveTo(w / 2 + width, 0, w / 2 + width, 2 * h / 5, w / 2, 2 * h / 5);
 	c.curveTo(w, 2 * h / 5, w, 3 * h / 5, w, h);
 	c.close();
+};
+export {
+mxActor,
 };

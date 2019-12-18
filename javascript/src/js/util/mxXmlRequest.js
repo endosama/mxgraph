@@ -1,3 +1,6 @@
+import {mxCellCodec} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -462,4 +465,7 @@ mxXmlRequest.prototype.simulate = function(doc, target)
 	{		
 		window.onbeforeunload = old;
 	}
+};
+export {
+mxXmlRequest,
 };

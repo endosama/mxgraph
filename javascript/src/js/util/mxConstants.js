@@ -1,3 +1,5 @@
+import {mxClient} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -2326,4 +2328,7 @@
 	 * for the STYLE_PERIMETER style.
 	 */
 	PERIMETER_TRIANGLE: 'trianglePerimeter'
+};
+export {
+mxConstants,
 };

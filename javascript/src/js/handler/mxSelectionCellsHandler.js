@@ -1,3 +1,8 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -304,4 +309,7 @@ mxSelectionCellsHandler.prototype.destroy = function()
 		this.graph.getView().removeListener(this.refreshHandler);
 		this.refreshHandler = null;
 	}
+};
+export {
+mxSelectionCellsHandler,
 };

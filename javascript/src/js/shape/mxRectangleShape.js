@@ -1,3 +1,6 @@
+import {mxShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -124,4 +127,7 @@ mxRectangleShape.prototype.paintForeground = function(c, x, y, w, h)
 	{
 		this.paintGlassEffect(c, x, y, w, h, this.getArcSize(w + this.strokewidth, h + this.strokewidth));
 	}
+};
+export {
+mxRectangleShape,
 };

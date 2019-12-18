@@ -1,3 +1,19 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxConstraintHandler} from '@js/mxDependencies.js';
+import {mxCellMarker} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2016, JGraph Ltd
  * Copyright (c) 2006-2016, Gaudenz Alder
@@ -2238,4 +2254,7 @@ mxConnectionHandler.prototype.destroy = function()
 		this.graph.removeListener(this.escapeHandler);
 		this.escapeHandler = null;
 	}
+};
+export {
+mxConnectionHandler,
 };

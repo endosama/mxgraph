@@ -1,3 +1,10 @@
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxObjectCodec} from '@js/mxDependencies.js';
+import {mxEditor} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -243,3 +250,5 @@ mxCodecRegistry.register(function()
 	return codec;
 
 }());
+export {
+};

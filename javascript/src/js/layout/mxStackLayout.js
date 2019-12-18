@@ -1,3 +1,7 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -593,4 +597,7 @@ mxStackLayout.prototype.updateParentGeometry = function(parent, pgeo, last)
 	{
 		model.setGeometry(parent, pgeo2);
 	}
+};
+export {
+mxStackLayout,
 };

@@ -1,3 +1,4 @@
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -186,4 +187,7 @@ mxEventSource.prototype.fireEvent = function(evt, sender)
 			}
 		}
 	}
+};
+export {
+mxEventSource,
 };

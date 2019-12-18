@@ -1,3 +1,6 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -210,4 +213,7 @@ mxAutoSaveManager.prototype.reset = function()
 mxAutoSaveManager.prototype.destroy = function()
 {
 	this.setGraph(null);
+};
+export {
+mxAutoSaveManager,
 };

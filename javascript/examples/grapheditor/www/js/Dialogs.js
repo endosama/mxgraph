@@ -1,3 +1,26 @@
+import {OPEN_FORM} from '@grapheditor/js/Dependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxXmlCanvas2D} from '@js/mxDependencies.js';
+import {mxImageExport} from '@js/mxDependencies.js';
+import {mxXmlRequest} from '@js/mxDependencies.js';
+import {mxForm} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxDisabled} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {Dialog} from '@grapheditor/js/Dependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
+import {Editor} from '@grapheditor/js/Dependencies.js';
+var jscolor = require('exports-loader?jscolor!@grapheditor/jscolor/jscolor.js')
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -2781,4 +2804,18 @@ var LayersWindow = function(editorUi, x, y, w, h)
 		mxEvent.removeListener(window, 'resize', resizeListener);
 		this.window.destroy();
 	}
+};
+
+export {
+OpenDialog,
+ColorDialog,
+AboutDialog,
+FilenameDialog,
+TextareaDialog,
+EditDiagramDialog,
+ExportDialog,
+EditDataDialog,
+LinkDialog,
+OutlineWindow,
+LayersWindow,
 };

@@ -1,3 +1,6 @@
+import {mxAnimation} from '@js/mxDependencies.js';
+import {mxCellStatePreview} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -246,4 +249,7 @@ mxMorphing.prototype.getOriginForCell = function(cell)
 	}
 	
 	return result;
+};
+export {
+mxMorphing,
 };

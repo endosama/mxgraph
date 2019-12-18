@@ -1,3 +1,34 @@
+import {mxDefaultPopupMenu} from '@js/mxDependencies.js';
+import {mxUndoManager} from '@js/mxDependencies.js';
+import {mxDefaultKeyHandler} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxLoadResources} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxPrintPreview} from '@js/mxDependencies.js';
+import {mxClipboard} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxSwimlaneManager} from '@js/mxDependencies.js';
+import {mxLayoutManager} from '@js/mxDependencies.js';
+import {mxRubberband} from '@js/mxDependencies.js';
+import {mxDivResizer} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxRootChange} from '@js/mxDependencies.js';
+import {mxValueChange} from '@js/mxDependencies.js';
+import {mxCellAttributeChange} from '@js/mxDependencies.js';
+import {mxStackLayout} from '@js/mxDependencies.js';
+import {mxCompactTreeLayout} from '@js/mxDependencies.js';
+import {mxDefaultToolbar} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxForm} from '@js/mxDependencies.js';
+import {mxOutline} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2019, JGraph Ltd
  * Copyright (c) 2006-2019, draw.io AG
@@ -3115,4 +3146,7 @@ mxEditor.prototype.destroy = function ()
 		this.status = null;
 		this.templates = null;
 	}
+};
+export {
+mxEditor,
 };

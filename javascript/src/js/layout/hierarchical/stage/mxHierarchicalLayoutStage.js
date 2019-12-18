@@ -23,3 +23,6 @@ function mxHierarchicalLayoutStage() { };
  * use.
  */
 mxHierarchicalLayoutStage.prototype.execute = function(parent) { };
+export {
+mxHierarchicalLayoutStage,
+};

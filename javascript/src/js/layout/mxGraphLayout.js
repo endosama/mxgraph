@@ -1,3 +1,9 @@
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -576,4 +582,7 @@ WeightedCellSorter.prototype.compare = function(a, b)
 	{
 		return 0;
 	}
+};
+export {
+mxGraphLayout,
 };

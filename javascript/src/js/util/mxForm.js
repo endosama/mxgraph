@@ -1,3 +1,7 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -199,4 +203,7 @@ mxForm.prototype.addField = function(name, input)
 	this.body.appendChild(tr);
 	
 	return input;
+};
+export {
+mxForm,
 };

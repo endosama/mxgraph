@@ -1,3 +1,48 @@
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxLoadResources} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxEdgeStyle} from '@js/mxDependencies.js';
+import {mxImage} from '@js/mxDependencies.js';
+import {mxTooltipHandler} from '@js/mxDependencies.js';
+import {mxSelectionCellsHandler} from '@js/mxDependencies.js';
+import {mxConnectionHandler} from '@js/mxDependencies.js';
+import {mxGraphHandler} from '@js/mxDependencies.js';
+import {mxPanningHandler} from '@js/mxDependencies.js';
+import {mxPopupMenuHandler} from '@js/mxDependencies.js';
+import {mxGraphSelectionModel} from '@js/mxDependencies.js';
+import {mxStylesheet} from '@js/mxDependencies.js';
+import {mxGraphView} from '@js/mxDependencies.js';
+import {mxCellRenderer} from '@js/mxDependencies.js';
+import {mxCellEditor} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxRootChange} from '@js/mxDependencies.js';
+import {mxChildChange} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxTerminalChange} from '@js/mxDependencies.js';
+import {mxGeometryChange} from '@js/mxDependencies.js';
+import {mxValueChange} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxStyleChange} from '@js/mxDependencies.js';
+import {mxCellOverlay} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxPanningManager} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxLabel} from '@js/mxDependencies.js';
+import {mxConnectionConstraint} from '@js/mxDependencies.js';
+import {mxVertexHandler} from '@js/mxDependencies.js';
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxEdgeSegmentHandler} from '@js/mxDependencies.js';
+import {mxElbowEdgeHandler} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -12920,4 +12965,7 @@ mxGraph.prototype.destroy = function()
 
 		this.container = null;
 	}
+};
+export {
+mxGraph,
 };

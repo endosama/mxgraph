@@ -1,3 +1,6 @@
+import {mxShape} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -482,4 +485,6 @@ mxArrowConnector.prototype.isMarkerStart = function()
 mxArrowConnector.prototype.isMarkerEnd = function()
 {
 	return (mxUtils.getValue(this.style, mxConstants.STYLE_ENDARROW, mxConstants.NONE) != mxConstants.NONE);
+};export {
+mxArrowConnector,
 };

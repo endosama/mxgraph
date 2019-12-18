@@ -1,3 +1,4 @@
+import {mxObjectIdentity} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -127,4 +128,7 @@ mxDictionary.prototype.visit = function(visitor)
 	{
 		visitor(key, this.map[key]);
 	}
+};
+export {
+mxDictionary,
 };

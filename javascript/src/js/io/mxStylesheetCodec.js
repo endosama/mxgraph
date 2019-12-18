@@ -1,3 +1,10 @@
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxObjectCodec} from '@js/mxDependencies.js';
+import {mxStylesheet} from '@js/mxDependencies.js';
+import {mxStyleRegistry} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -215,3 +222,6 @@ var mxStylesheetCodec = mxCodecRegistry.register(function()
  * may contain user input.
  */
 mxStylesheetCodec.allowEval = true;
+export {
+mxStylesheetCodec,
+};

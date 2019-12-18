@@ -1,3 +1,7 @@
+import {mxShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -61,4 +65,7 @@ mxRhombus.prototype.paintVertexShape = function(c, x, y, w, h)
 	this.addPoints(c, [new mxPoint(x + hw, y), new mxPoint(x + w, y + hh), new mxPoint(x + hw, y + h),
 	     new mxPoint(x, y + hh)], this.isRounded, arcSize, true);
 	c.fillAndStroke();
+};
+export {
+mxRhombus,
 };

@@ -1,3 +1,10 @@
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -348,4 +355,7 @@ mxHandle.prototype.destroy = function()
 		this.shape.destroy();
 		this.shape = null;
 	}
+};
+export {
+mxHandle,
 };

@@ -1,3 +1,7 @@
+import {mxShape} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -111,4 +115,7 @@ mxDoubleEllipse.prototype.getLabelBounds = function(rect)
 			Math.min(rect.width / 5 / this.scale, rect.height / 5 / this.scale)))) * this.scale;
 
 	return new mxRectangle(rect.x + margin, rect.y + margin, rect.width - 2 * margin, rect.height - 2 * margin);
+};
+export {
+mxDoubleEllipse,
 };

@@ -1,3 +1,12 @@
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxEdgeStyle} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -227,4 +236,7 @@ mxElbowEdgeHandler.prototype.redrawInnerBends = function(p0, pe)
 	{
 		this.checkLabelHandle(this.bends[1].bounds);
 	}
+};
+export {
+mxElbowEdgeHandler,
 };

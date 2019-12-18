@@ -1,3 +1,15 @@
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxPage} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxGraphView} from '@js/mxDependencies.js';
+import {mxPageBreak} from '@js/mxDependencies.js';
+import {mxPageSelector} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxTemporaryCellStates} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2019, JGraph Ltd
  * Copyright (c) 2006-2017, draw.io AG
@@ -1216,4 +1228,7 @@ mxPrintPreview.prototype.close = function()
 		this.wnd.close();
 		this.wnd = null;
 	}
+};
+export {
+mxPrintPreview,
 };

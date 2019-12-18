@@ -1,3 +1,9 @@
+import {mxHierarchicalLayoutStage} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxHierarchicalEdgeStyle} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -1740,4 +1746,7 @@ mxCoordinateAssignment.prototype.setVertexLocation = function(cell)
 mxCoordinateAssignment.prototype.processReversedEdge = function(graph, model)
 {
 	// hook for subclassers
+};
+export {
+mxCoordinateAssignment,
 };

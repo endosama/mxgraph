@@ -1,3 +1,5 @@
+import {mxResources} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -254,4 +256,7 @@ mxMultiplicity.prototype.checkType = function(graph, value, type, attr, attrValu
 	}
 	
 	return false;
+};
+export {
+mxMultiplicity,
 };

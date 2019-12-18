@@ -1,3 +1,6 @@
+import {mxAbstractCanvas2D} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1214,4 +1217,7 @@ mxXmlCanvas2D.prototype.fill = function()
 mxXmlCanvas2D.prototype.fillAndStroke = function()
 {
 	this.root.appendChild(this.createElement('fillstroke'));
+};
+export {
+mxXmlCanvas2D,
 };

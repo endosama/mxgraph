@@ -1,3 +1,20 @@
+import {mxClient} from '@js/mxClient.js';
+import {mxJavaScriptExpression} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxXmlRequest} from '@js/mxDependencies.js';
+import {mxObjectIdentity} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxEffects} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
+import {mxTemporaryCellStates} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxWindow} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxDragSource} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -4384,4 +4401,7 @@ var mxUtils =
 		return dragSource;
 	}
 
+};
+export {
+mxUtils,
 };

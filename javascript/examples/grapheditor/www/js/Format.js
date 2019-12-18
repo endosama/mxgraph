@@ -1,3 +1,22 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxCellRenderer} from '@js/mxDependencies.js';
+import {Dialog} from '@grapheditor/js/Dependencies.js';
+import {PageSetupDialog} from '@grapheditor/js/Dependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
+import {Menus} from '@grapheditor/js/Dependencies.js';
+import {Editor} from '@grapheditor/js/Dependencies.js';
+import {ChangePageSetup} from '@grapheditor/js/Dependencies.js';
+let Format;
+let BaseFormatPanel;
+let ArrangePanel;
+let TextFormatPanel;
+let StyleFormatPanel;
+let DiagramFormatPanel;
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -3790,7 +3809,7 @@ TextFormatPanel.prototype.addFont = function(container)
 							{
 								if (selection.containsNode(elts[i], true))
 								{
-									temp = mxUtils.getCurrentStyle(elts[i]);
+									var temp = mxUtils.getCurrentStyle(elts[i]);
 									fontSize = Math.max(getAbsoluteFontSize(temp), fontSize);
 									var lh = getRelativeLineHeight(fontSize, temp, elts[i]);
 									
@@ -4964,7 +4983,7 @@ StyleFormatPanel.prototype.addStroke = function(container)
 			stylePanel.style.display = '';
 		}
 		
-		function updateArrow(marker, fill, elt, prefix)
+		var updateArrow = mxUtils.bind(this,function(marker, fill, elt, prefix)
 		{
 			var markerDiv = elt.getElementsByTagName('div')[0];
 			
@@ -4983,7 +5002,7 @@ StyleFormatPanel.prototype.addStroke = function(container)
 			}
 			
 			return markerDiv;
-		};
+		});
 		
 		var sourceDiv = updateArrow(mxUtils.getValue(ss.style, mxConstants.STYLE_STARTARROW, null),
 				mxUtils.getValue(ss.style, 'startFill', '1'), lineStart, 'start');
@@ -5771,4 +5790,13 @@ DiagramFormatPanel.prototype.destroy = function()
 		this.editorUi.removeListener(this.gridEnabledListener);
 		this.gridEnabledListener = null;
 	}
+};
+
+export {
+Format,
+BaseFormatPanel,
+ArrangePanel,
+TextFormatPanel,
+StyleFormatPanel,
+DiagramFormatPanel,
 };

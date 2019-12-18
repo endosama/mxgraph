@@ -1,3 +1,6 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -162,4 +165,7 @@ mxEdgeLabelLayout.prototype.avoid = function(edge, vertex)
 			model.setGeometry(edge.cell, g);
 		}
 	}
+};
+export {
+mxEdgeLabelLayout,
 };

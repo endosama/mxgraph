@@ -1,3 +1,25 @@
+import {STENCIL_PATH} from '@grapheditor/js/Dependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxStackLayout} from '@js/mxDependencies.js';
+import {mxDragSource} from '@js/mxDependencies.js';
+import {mxCodec} from '@js/mxDependencies.js';
+import {mxGraphModel} from '@js/mxDependencies.js';
+import {mxStencilRegistry} from '@js/mxDependencies.js';
+import {Editor} from '@grapheditor/js/Dependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
+import {Dialog} from '@grapheditor/js/Dependencies.js';
+let urlParams = {};
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -2601,7 +2623,7 @@ Sidebar.prototype.createDragSource = function(elt, dropHandler, preview, cells, 
 			arrow.setAttribute('title', tooltip);
 		}
 		
-		mxUtils.setOpacity(arrow, (img == this.refreshTarget) ? 30 : 20);
+		mxUtils.setOpacity(arrow, (img == sidebar.refreshTarget) ? 30 : 20);
 		arrow.style.position = 'absolute';
 		arrow.style.cursor = 'crosshair';
 		
@@ -3683,4 +3705,8 @@ Sidebar.prototype.destroy = function()
 		mxEvent.removeListener(document, (mxClient.IS_POINTER) ? 'pointerout' : 'mouseout', this.pointerOutHandler);
 		this.pointerOutHandler = null;
 	}
+};
+
+export {
+Sidebar,
 };

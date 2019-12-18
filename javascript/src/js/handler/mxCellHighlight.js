@@ -1,3 +1,9 @@
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -311,4 +317,7 @@ mxCellHighlight.prototype.destroy = function()
 		this.shape.destroy();
 		this.shape = null;
 	}
+};
+export {
+mxCellHighlight,
 };

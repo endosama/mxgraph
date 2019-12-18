@@ -1,3 +1,23 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxClipboard} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {Editor} from '@grapheditor/js/Dependencies.js';
+import {OpenFile} from '@grapheditor/js/Dependencies.js';
+import {OpenDialog} from '@grapheditor/js/Dependencies.js';
+import {PageSetupDialog} from '@grapheditor/js/Dependencies.js';
+import {PrintDialog} from '@grapheditor/js/Dependencies.js';
+import {OutlineWindow} from '@grapheditor/js/Dependencies.js';
+import {FilenameDialog} from '@grapheditor/js/Dependencies.js';
+import {EditDiagramDialog} from '@grapheditor/js/Dependencies.js';
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -1431,4 +1451,9 @@ Action.prototype.setSelectedCallback = function(funct)
 Action.prototype.isSelected = function()
 {
 	return this.selectedCallback();
+};
+
+export {
+Actions,
+Action,
 };

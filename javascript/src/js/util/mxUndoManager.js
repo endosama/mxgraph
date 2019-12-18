@@ -1,3 +1,6 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -226,4 +229,7 @@ mxUndoManager.prototype.trim = function()
 			edits[i].die();
 		}
 	}
+};
+export {
+mxUndoManager,
 };

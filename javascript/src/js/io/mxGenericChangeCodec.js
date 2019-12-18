@@ -1,3 +1,13 @@
+import {mxObjectCodec} from '@js/mxDependencies.js';
+import {mxGraph} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxValueChange} from '@js/mxDependencies.js';
+import {mxStyleChange} from '@js/mxDependencies.js';
+import {mxGeometryChange} from '@js/mxDependencies.js';
+import {mxCollapseChange} from '@js/mxDependencies.js';
+import {mxVisibleChange} from '@js/mxDependencies.js';
+import {mxCellAttributeChange} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -62,3 +72,6 @@ mxCodecRegistry.register(mxGenericChangeCodec(new mxGeometryChange(), 'geometry'
 mxCodecRegistry.register(mxGenericChangeCodec(new mxCollapseChange(), 'collapsed'));
 mxCodecRegistry.register(mxGenericChangeCodec(new mxVisibleChange(), 'visible'));
 mxCodecRegistry.register(mxGenericChangeCodec(new mxCellAttributeChange(), 'value'));
+export {
+mxGenericChangeCodec,
+};

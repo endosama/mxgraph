@@ -1,3 +1,23 @@
+import {mxClient} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
+import {mxHierarchicalLayout} from '@js/mxDependencies.js';
+import {mxCompactTreeLayout} from '@js/mxDependencies.js';
+import {mxRadialTreeLayout} from '@js/mxDependencies.js';
+import {mxFastOrganicLayout} from '@js/mxDependencies.js';
+import {mxCircleLayout} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
+import {mxDisabled} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxEventSource} from '@js/mxDependencies.js';
+import {EditorUi} from '@grapheditor/js/Dependencies.js';
+import {Editor} from '@grapheditor/js/Dependencies.js';
+import {ColorDialog} from '@grapheditor/js/Dependencies.js';
+let Menus;
 /**
  * Copyright (c) 2006-2012, JGraph Ltd
  */
@@ -1336,4 +1356,10 @@ Menu.prototype.execute = function(menu, parent)
 EditorUi.prototype.createMenus = function()
 {
 	return new Menus(this);
+};
+
+export {
+Menus,
+Menubar,
+Menu,
 };

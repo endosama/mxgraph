@@ -1,3 +1,6 @@
+import {mxListenerList} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxMouseEvent} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1388,4 +1391,7 @@ var mxEvent =
 	 */
 	RESET: 'reset'
 
+};
+export {
+mxEvent,
 };

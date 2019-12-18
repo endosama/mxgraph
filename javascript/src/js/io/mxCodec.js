@@ -1,3 +1,9 @@
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxCell} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
+import {mxCodecRegistry} from '@js/mxDependencies.js';
+import {mxLog} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -618,4 +624,7 @@ mxCodec.prototype.setAttribute = function(node, attribute, value)
 	{
 		node.setAttribute(attribute, value);
 	}
+};
+export {
+mxCodec,
 };

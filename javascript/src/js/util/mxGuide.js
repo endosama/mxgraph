@@ -1,3 +1,6 @@
+import {mxPolyline} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -442,4 +445,7 @@ mxGuide.prototype.destroy = function()
 		this.guideY.destroy();
 		this.guideY = null;
 	}
+};
+export {
+mxGuide,
 };

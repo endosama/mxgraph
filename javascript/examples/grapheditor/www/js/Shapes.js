@@ -1,3 +1,43 @@
+import {mxCylinder} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxCellRenderer} from '@js/mxDependencies.js';
+import {mxActor} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxShapePaint0} from '@js/mxDependencies.js';
+import {mxShape} from '@js/mxDependencies.js';
+import {mxRhombus} from '@js/mxDependencies.js';
+import {mxRectangleShapeIsHtmlAllowed0} from '@js/mxDependencies.js';
+import {mxRectangleShape} from '@js/mxDependencies.js';
+import {mxRectangleShapePaintBackground0} from '@js/mxDependencies.js';
+import {mxRectangleShapePaintForeground0} from '@js/mxDependencies.js';
+import {mxHexagon} from '@js/mxDependencies.js';
+import {mxRhombusPaintVertexShape} from '@js/mxDependencies.js';
+import {mxEllipse} from '@js/mxDependencies.js';
+import {mxPerimeter} from '@js/mxDependencies.js';
+import {mxStyleRegistry} from '@js/mxDependencies.js';
+import {mxDoubleEllipse} from '@js/mxDependencies.js';
+import {mxArrowConnector} from '@js/mxDependencies.js';
+import {mxConnector} from '@js/mxDependencies.js';
+import {mxResources} from '@js/mxDependencies.js';
+import {mxMarker} from '@js/mxDependencies.js';
+import {mxVertexHandler} from '@js/mxDependencies.js';
+import {mxHandle} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxStencilRegistry} from '@js/mxDependencies.js';
+import {mxEdgeHandler} from '@js/mxDependencies.js';
+import {mxEdgeStyle} from '@js/mxDependencies.js';
+import {mxElbowEdgeHandler} from '@js/mxDependencies.js';
+import {mxConnectionConstraint} from '@js/mxDependencies.js';
+import {mxLabel} from '@js/mxDependencies.js';
+import {mxImageShape} from '@js/mxDependencies.js';
+import {mxSwimlane} from '@js/mxDependencies.js';
+import {mxLine} from '@js/mxDependencies.js';
+import {mxTriangle} from '@js/mxDependencies.js';
+import {mxCloud} from '@js/mxDependencies.js';
+import {mxArrow} from '@js/mxDependencies.js';
+import {Graph} from '@grapheditor/js/Dependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  */
@@ -4328,3 +4368,6 @@
 	ProvidedRequiredInterfaceShape.prototype.constraints = [new mxConnectionConstraint(new mxPoint(0, 0.5), false),
         new mxConnectionConstraint(new mxPoint(1, 0.5), false)];
 })();
+
+export {
+};

@@ -1,3 +1,10 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1128,4 +1135,7 @@ mxWindow.prototype.destroy = function()
 	this.title = null;
 	this.content = null;
 	this.contentWrapper = null;
+};
+export {
+mxWindow,
 };

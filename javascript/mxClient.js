@@ -15514,7 +15514,7 @@ mxPopupMenu.prototype.createSubmenu = function(parent)
 	img.setAttribute('src', this.submenuImage);
 	
 	// Last column of the submenu item in the parent menu
-	td = parent.firstChild.nextSibling.nextSibling;
+	var td = parent.firstChild.nextSibling.nextSibling;
 	td.appendChild(img);
 };
 
@@ -90365,3 +90365,7 @@ mxCodecRegistry.register(function()
 	return codec;
 
 }());
+
+export {
+mxClient,
+};

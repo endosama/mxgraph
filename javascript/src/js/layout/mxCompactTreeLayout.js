@@ -1,3 +1,9 @@
+import {mxGraphLayout} from '@js/mxDependencies.js';
+import {mxDictionary} from '@js/mxDependencies.js';
+import {mxCellPath} from '@js/mxDependencies.js';
+import {mxRectangle} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2018, JGraph Ltd
  * Copyright (c) 2006-2018, Gaudenz Alder
@@ -1113,4 +1119,6 @@ mxCompactTreeLayout.prototype.processNodeOutgoing = function(node)
 
 		maxYOffset = Math.max(maxYOffset, currentYOffset);
 	}
+};export {
+mxCompactTreeLayout,
 };

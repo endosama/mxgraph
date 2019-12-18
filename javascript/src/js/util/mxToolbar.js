@@ -1,3 +1,14 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxToolbarMode} from '@js/mxDependencies.js';
+import {mxToolbarItem} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxPopupMenu} from '@js/mxDependencies.js';
+import {mxPoint} from '@js/mxDependencies.js';
+import {mxToolbarComboContainer} from '@js/mxDependencies.js';
+import {mxToolbarCombo} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -524,4 +535,7 @@ mxToolbar.prototype.destroy = function ()
 	{
 		this.menu.destroy();
 	}
+};
+export {
+mxToolbar,
 };

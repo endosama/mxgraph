@@ -109,3 +109,6 @@ mxEventObject.prototype.consume = function()
 {
 	this.consumed = true;
 };
+export {
+mxEventObject,
+};

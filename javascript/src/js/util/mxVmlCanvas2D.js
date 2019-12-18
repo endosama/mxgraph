@@ -1,3 +1,8 @@
+import {mxAbstractCanvas2D} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxConstants} from '@js/mxDependencies.js';
+import {mxText} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -1099,4 +1104,7 @@ mxVmlCanvas2D.prototype.fill = function()
 mxVmlCanvas2D.prototype.fillAndStroke = function()
 {
 	this.addNode(true, true);
+};
+export {
+mxVmlCanvas2D,
 };

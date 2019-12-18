@@ -1,3 +1,12 @@
+import {mxEventSource} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxPopupMenuItem} from '@js/mxDependencies.js';
+import {mxPopupMenuIcon} from '@js/mxDependencies.js';
+import {mxDisabled} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxPopupMenuItemHover} from '@js/mxDependencies.js';
+import {mxEventObject} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -400,7 +409,7 @@ mxPopupMenu.prototype.createSubmenu = function(parent)
 	img.setAttribute('src', this.submenuImage);
 	
 	// Last column of the submenu item in the parent menu
-	td = parent.firstChild.nextSibling.nextSibling;
+	var td = parent.firstChild.nextSibling.nextSibling;
 	td.appendChild(img);
 };
 
@@ -610,4 +619,7 @@ mxPopupMenu.prototype.destroy = function()
 		
 		this.div = null;
 	}
+};
+export {
+mxPopupMenu,
 };

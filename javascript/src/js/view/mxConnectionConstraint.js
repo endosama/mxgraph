@@ -65,3 +65,6 @@ mxConnectionConstraint.prototype.dx = null;
  */
 mxConnectionConstraint.prototype.dy = null;
 
+export {
+mxConnectionConstraint,
+};

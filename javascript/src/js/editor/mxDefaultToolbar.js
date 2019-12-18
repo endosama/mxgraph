@@ -1,3 +1,9 @@
+import {mxToolbar} from '@js/mxDependencies.js';
+import {mxEvent} from '@js/mxDependencies.js';
+import {mxUtils} from '@js/mxDependencies.js';
+import {mxClient} from '@js/mxDependencies.js';
+import {mxGeometry} from '@js/mxDependencies.js';
+import {mxDragSource} from '@js/mxDependencies.js';
 /**
  * Copyright (c) 2006-2015, JGraph Ltd
  * Copyright (c) 2006-2015, Gaudenz Alder
@@ -561,4 +567,7 @@ mxDefaultToolbar.prototype.destroy = function ()
 		this.toolbar.destroy();
 		this.toolbar = null;
 	}
+};
+export {
+mxDefaultToolbar,
 };
